@@ -70,35 +70,9 @@
             background-color: #2a2a2a; /* Slightly lighter dark background for highlight */
             border-left-color: #4fa8e3; /* Lighter accent border */
         }
-
-        /* Theme Toggle Button */
-        #theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            z-index: 1000;
-            transition: background-color 0.3s;
-        }
-        #theme-toggle:hover {
-            background-color: #2980b9;
-        }
-        body.dark-theme #theme-toggle {
-             background-color: #5cdb95;
-        }
-        body.dark-theme #theme-toggle:hover {
-            background-color: #45b77e;
-        }
     </style>
 </head>
 <body>
-    <button id="theme-toggle">Toggle Dark Mode</button>
     <div class="container">
         <h1>DOCUTH PRIVACY POLICY</h1>
         
@@ -225,28 +199,5 @@
             </ul>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                body.classList.add('dark-theme');
-            }
-
-            themeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-theme');
-                // Save preference
-                if (body.classList.contains('dark-theme')) {
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    localStorage.setItem('theme', 'light');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
