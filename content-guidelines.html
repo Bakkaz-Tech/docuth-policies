@@ -52,8 +52,9 @@
         }
 
         .container {
-            max-width: 414px;
-            margin: 0 auto;
+            /* Removed small screen limit, now allows for larger screens */
+            max-width: 800px; /* Increased max-width for better large screen experience */
+            margin: 0 auto; /* Keep centered */
             background: #000;
             min-height: 100vh;
         }
@@ -117,6 +118,7 @@
         ul {
             list-style: none;
             margin-left: 0;
+            padding-left: 0; /* Ensure no default padding on ul */
         }
 
         li {
@@ -125,12 +127,20 @@
             line-height: 1.5;
             margin-bottom: 12px;
             position: relative;
+            /* Added padding-left to create space for the bullet */
+            padding-left: 20px; 
+            /* Light mode color adjustment already present in media query */
         }
 
         li::before {
             content: "•";
             color: #ccc;
-            margin-right: 8px;
+            /* Position the bullet absolutely to create a hanging indent */
+            position: absolute;
+            left: 0;
+            /* Adjust top for better vertical alignment with the first line of text */
+            top: 0.2em; 
+            /* margin-right is no longer needed as padding-left on li creates the gap */
         }
 
         .subsection-title {
@@ -156,16 +166,18 @@
         }
 
         .enforcement {
-            background: #111;
+            /* Removed background */
+            background: none; 
             padding: 16px;
-            border-radius: 8px;
+            border-radius: 8px; /* Kept border-radius as a style */
             margin-top: 24px;
         }
 
         @media (prefers-color-scheme: light) {
             .enforcement {
-                background: #f8f8f8 !important;
-                border: 1px solid #e0e0e0;
+                /* Removed background and border in light mode */
+                background: none !important;
+                border: none;
             }
         }
 
@@ -195,6 +207,7 @@
         }
 
         /* Mobile responsive adjustments */
+        /* Removed max-width based adjustment as the container now scales */
         @media (max-width: 375px) {
             .content {
                 padding: 16px 12px;
