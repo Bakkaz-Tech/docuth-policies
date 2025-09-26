@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Guidelines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.4;
+            min-height: 100vh;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background: #f5f5f5;
+                color: #000;
+            }
+            
+            .header {
+                background: #fff !important;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            
+            .header h1 {
+                color: #000 !important;
+            }
+            
+            .back-arrow {
+                color: #000 !important;
+            }
+            
+            .content {
+                background: #fff !important;
+            }
+            
+            .section-title {
+                color: #000 !important;
+            }
+            
+            .section-content, li {
+                color: #333 !important;
+            }
+        }
+
+        .container {
+            max-width: 414px;
+            margin: 0 auto;
+            background: #000;
+            min-height: 100vh;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .container {
+                background: #fff;
+            }
+        }
+
+        .header {
+            background: #1a1a1a;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .back-arrow {
+            font-size: 18px;
+            margin-right: 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header h1 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .content {
+            padding: 20px 16px;
+            background: #000;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .section-content {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .subsection {
+            margin: 16px 0;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        li {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: #ccc;
+            margin-right: 8px;
+        }
+
+        .subsection-title {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .subsection-title {
+                color: #000 !important;
+            }
+        }
+
+        .subsection-content {
+            color: #ccc;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .subsection-content {
+                color: #555 !important;
+            }
+        }
+
+        .enforcement {
+            background: #111;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .enforcement {
+                background: #f8f8f8 !important;
+                border: 1px solid #e0e0e0;
+            }
+        }
+
+        .enforcement-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .enforcement-title {
+                color: #000 !important;
+            }
+        }
+
+        .enforcement-content {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .enforcement-content {
+                color: #333 !important;
+            }
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 375px) {
+            .content {
+                padding: 16px 12px;
+            }
+            
+            .header {
+                padding: 12px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <section class="section">
+                <h2 class="section-title">1. Respectful & Safe Community</h2>
+                <p class="section-content">
+                    We are committed to fostering a supportive and respectful community. Content that promotes or incites hatred, discrimination, or violence against individuals or groups based on race, ethnicity, religion, gender, sexual orientation, disability, or any other characteristic is strictly prohibited. This includes, but is not limited to:
+                </p>
+                <ul>
+                    <li>
+                        <span class="subsection-title">Hate Speech:</span>
+                        <span class="subsection-content">Content that attacks or demeans a person or group on the basis of protected attributes.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Harassment:</span>
+                        <span class="subsection-content">Deliberate and repeated abusive behavior, including threats, doxxing, or unwanted sexual advances.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Violence:</span>
+                        <span class="subsection-content">Content that glorifies, threatens, or encourages violence, self-harm, or terrorism.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">2. No Illegal Content</h2>
+                <p class="section-content">
+                    All content must comply with local and international laws. Do not post or distribute any content that is illegal, including but not limited to:
+                </p>
+                <ul>
+                    <li>
+                        <span class="subsection-title">Pornography and Sexually Explicit Content:</span>
+                        <span class="subsection-content">Materials that depict nudity, sexual acts, or other sexually explicit material.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Illegal Products or Services:</span>
+                        <span class="subsection-content">Offering or promoting illegal drugs, weapons, or other illicit goods.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Copyright Infringement:</span>
+                        <span class="subsection-content">Sharing or distributing content without the proper rights or permissions.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">3. Authenticity & Trust</h2>
+                <p class="section-content">
+                    Docuth thrives on authenticity. Your content should be original and truthful. Please do not engage in activities such as:
+                </p>
+                <ul>
+                    <li>
+                        <span class="subsection-title">Misinformation and Disinformation:</span>
+                        <span class="subsection-content">Spreading demonstrably false information that could cause harm.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Impersonation:</span>
+                        <span class="subsection-content">Pretending to be someone else to deceive or mislead others.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Plagiarism:</span>
+                        <span class="subsection-content">Presenting someone else's work as your own.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">4. Quality & Relevance</h2>
+                <p class="section-content">
+                    To ensure a high-quality experience for all users, content should be relevant and contribute positively to the community.
+                </p>
+                <ul>
+                    <li>
+                        <span class="subsection-title">Spam:</span>
+                        <span class="subsection-content">Do not post repetitive or unwanted promotional material.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Malicious Content:</span>
+                        <span class="subsection-content">Do not share links to phishing sites, viruses, or other harmful software.</span>
+                    </li>
+                    <li>
+                        <span class="subsection-title">Graphic Content:</span>
+                        <span class="subsection-content">Content that is excessively violent, gory, or otherwise disturbing should not be posted without a clear warning.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="enforcement">
+                <h3 class="enforcement-title">Enforcement</h3>
+                <p class="enforcement-content">
+                    Our team will review all reported content. Violations of these guidelines may result in a warning, content removal, and/or suspension or termination of your account.
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
